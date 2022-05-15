@@ -5,6 +5,105 @@
          url("./assets/fonts/Fredoka_SemiCondensed-Regular.ttf") format("ttf");
 }
 
+@media (max-width: 1300px) {
+    html > body {
+        font-size: 1.5rem;
+    }
+
+    body > h1 {
+        font-size: 4vw;
+    }
+
+    body > .container {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navigation-and-text > .meme-description {
+        min-width: 60%;
+        width: 60%;
+    }
+
+    .navigation-and-text > .controls {
+        width: 40%;
+    }
+}
+
+@media (max-width: 890px) {
+    html > body {
+        font-size: 1.4rem;
+    }
+    
+    body > h1 {
+        font-size: 5vw;
+    }
+    
+    body > .container {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 750px) {
+    html > body {
+        font-size: 1.3rem;
+    }
+
+    body > .container {
+        padding: 2vw;
+    }
+}
+
+@media (max-width: 690px) {
+    body > .container {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 670px) {
+    body > h1 {
+        font-size: 6vw;
+    }
+    
+    body > .container {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 690px) {
+    body > .container {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 500px) {
+    body > h1 {
+        font-size: 7vw;
+    }
+    
+    .navigation-and-text {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .navigation-and-text > .meme-description {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .navigation-and-text > .controls {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    body > h1 {
+        font-size: 8.5vw;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -59,15 +158,15 @@ input {
 }
 
 .slider {
-    width: calc(600% + 5*1vw);
+    width: calc(600% + 5*2vw);
     height: 100%;
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
     transition: all 0.3s ease-in-out;
 }
 
 .slide {
-    width: calc((100% + 1vw)/6);
+    width: calc((100% + 2vw)/6);
 }
 
 img {
@@ -79,7 +178,7 @@ img {
 .navigation-and-text {
     display: flex;
     justify-content: space-between;
-    padding: 1vw 0 0 0;
+    padding: 2vw 0 0 0;
     width: 100%;
 }
 
@@ -160,7 +259,7 @@ img {
 }
 
 #meme2:checked ~ .slider {
-    transform: translate(calc(((100% + 1vw)/6) * -1));
+    transform: translate(calc(((100% + 2vw)/6) * -1));
 }
 
 #meme2:checked ~ .navigation-and-text > .meme-description > .meme-text {
@@ -168,7 +267,7 @@ img {
 }
 
 #meme3:checked ~ .slider {
-    transform: translate(calc(((100% + 1vw)/6) * -2));
+    transform: translate(calc(((100% + 2vw)/6) * -2));
 }
 
 #meme3:checked ~ .navigation-and-text > .meme-description > .meme-text {
@@ -176,7 +275,7 @@ img {
 }
 
 #meme4:checked ~ .slider {
-    transform: translate(calc(((100% + 1vw)/6) * -3));
+    transform: translate(calc(((100% + 2vw)/6) * -3));
 }
 
 #meme4:checked ~ .navigation-and-text > .meme-description > .meme-text {
@@ -184,7 +283,7 @@ img {
 }
 
 #meme5:checked ~ .slider {
-    transform: translate(calc(((100% + 1vw)/6) * -4));
+    transform: translate(calc(((100% + 2vw)/6) * -4));
 }
 
 #meme5:checked ~ .navigation-and-text > .meme-description > .meme-text {
@@ -192,7 +291,7 @@ img {
 }
 
 #meme6:checked ~ .slider {
-    transform: translate(calc(((100% + 1vw)/6) * -5));
+    transform: translate(calc(((100% + 2vw)/6) * -5));
 }
 
 #meme6:checked ~ .navigation-and-text > .meme-description > .meme-text {
