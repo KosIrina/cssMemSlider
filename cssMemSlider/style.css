@@ -52,6 +52,10 @@
     body > .container {
         padding: 2vw;
     }
+
+    .container > .navigation-and-text {
+        padding: 2vw 0 0 0;
+    }
 }
 
 @media (max-width: 690px) {
@@ -178,7 +182,7 @@ img {
 .navigation-and-text {
     display: flex;
     justify-content: space-between;
-    padding: 2vw 0 0 0;
+    padding: 1vw 0 0 0;
     width: 100%;
 }
 
