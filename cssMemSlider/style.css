@@ -225,31 +225,31 @@ img {
     transition: all 0.2s ease;
 }
 
-.bar-button:hover {
+.bar:hover .bar-button {
     background-color: #609ba3;
     border: 0.2rem solid #609ba3;
 }
 
-.bar-button:active {
+.bar:active .bar-button {
     transform: scale(0.8);
 }
 
-#meme1:checked ~ .navigation-and-text > .controls > label > .bar1,
-#meme2:checked ~ .navigation-and-text > .controls > label > .bar2,
-#meme3:checked ~ .navigation-and-text > .controls > label > .bar3,
-#meme4:checked ~ .navigation-and-text > .controls > label > .bar4,
-#meme5:checked ~ .navigation-and-text > .controls > label > .bar5,
-#meme6:checked ~ .navigation-and-text > .controls > label > .bar6 {
+#meme1:checked ~ .navigation-and-text > .controls > label > .button1,
+#meme2:checked ~ .navigation-and-text > .controls > label > .button2,
+#meme3:checked ~ .navigation-and-text > .controls > label > .button3,
+#meme4:checked ~ .navigation-and-text > .controls > label > .button4,
+#meme5:checked ~ .navigation-and-text > .controls > label > .button5,
+#meme6:checked ~ .navigation-and-text > .controls > label > .button6 {
     background-color: transparent;
     border: 0.2rem solid #ffffff;
 }
 
-#meme1:checked ~ .navigation-and-text > .controls > label > .bar1:hover,
-#meme2:checked ~ .navigation-and-text > .controls > label > .bar2:hover,
-#meme3:checked ~ .navigation-and-text > .controls > label > .bar3:hover,
-#meme4:checked ~ .navigation-and-text > .controls > label > .bar4:hover,
-#meme5:checked ~ .navigation-and-text > .controls > label > .bar5:hover,
-#meme6:checked ~ .navigation-and-text > .controls > label > .bar6:hover {
+#meme1:checked ~ .navigation-and-text > .controls > .bar1:hover .button1,
+#meme2:checked ~ .navigation-and-text > .controls > .bar2:hover .button2,
+#meme3:checked ~ .navigation-and-text > .controls > .bar3:hover .button3,
+#meme4:checked ~ .navigation-and-text > .controls > .bar4:hover .button4,
+#meme5:checked ~ .navigation-and-text > .controls > .bar5:hover .button5,
+#meme6:checked ~ .navigation-and-text > .controls > .bar6:hover .button6 {
     background-color: transparent;
     border: 0.2rem solid #609ba3;
 }
