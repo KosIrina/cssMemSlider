@@ -1,0 +1,303 @@
+@font-face {
+    font-family: "Fredoka";
+    src: url("./assets/fonts/FredokaSemiCondensed-Regular.woff2") format("woff2"),
+         url("./assets/fonts/FredokaSemiCondensed-Regular.woff") format("woff"),
+         url("./assets/fonts/Fredoka_SemiCondensed-Regular.ttf") format("ttf");
+}
+
+@media (max-width: 1300px) {
+    html > body {
+        font-size: 1.5rem;
+    }
+
+    body > h1 {
+        font-size: 4vw;
+    }
+
+    body > .container {
+        width: 55vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navigation-and-text > .meme-description {
+        min-width: 60%;
+        width: 60%;
+    }
+
+    .navigation-and-text > .controls {
+        width: 40%;
+    }
+}
+
+@media (max-width: 890px) {
+    html > body {
+        font-size: 1.4rem;
+    }
+    
+    body > h1 {
+        font-size: 5vw;
+    }
+    
+    body > .container {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 750px) {
+    html > body {
+        font-size: 1.3rem;
+    }
+
+    body > .container {
+        padding: 2vw;
+    }
+
+    .container > .navigation-and-text {
+        padding: 2vw 0 0 0;
+    }
+}
+
+@media (max-width: 690px) {
+    body > .container {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 670px) {
+    body > h1 {
+        font-size: 6vw;
+    }
+    
+    body > .container {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 690px) {
+    body > .container {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 500px) {
+    body > h1 {
+        font-size: 7vw;
+    }
+    
+    .navigation-and-text {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .navigation-and-text > .meme-description {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .navigation-and-text > .controls {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    body > h1 {
+        font-size: 8.5vw;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/images/background-image.jpg');
+    background-size: 40vw;
+    font-family: Fredoka, sans-serif;
+    font-weight: 400; 
+    font-size: 1.8rem;  
+    text-align: left;
+    color: #ffffff;
+} 
+
+h1 {
+    width: max-content;
+    margin: 2%;
+    padding: 0.5%;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 2rem 1rem;
+}
+
+.container {
+    width: 45vw;
+    margin: 0 0 2% 0;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+input {
+    display: none;
+}
+
+.slider {
+    width: calc(600% + 5*2vw);
+    height: 100%;
+    display: flex;
+    gap: 2vw;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide {
+    width: calc((100% + 2vw)/6);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.navigation-and-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 0 0 0;
+    width: 100%;
+}
+
+.meme-description {
+    min-width: 70%;
+    width: 70%;
+    display: flex;
+    overflow: hidden;
+}
+
+.meme-text {
+    min-width: 100%;
+    width: 100%;
+    padding: 0 0 0 0.5%;    
+    transition: all 0.3s ease-in-out;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    background: transparent;
+}
+
+.bar-button {
+    margin: 0 auto;
+    width: 1rem;
+    height: 1rem;
+    background-color: #ffffff;
+    border: 0.2rem solid #ffffff;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+}
+
+.bar:hover .bar-button {
+    background-color: #609ba3;
+    border: 0.2rem solid #609ba3;
+}
+
+.bar:active .bar-button {
+    transform: scale(0.8);
+}
+
+#meme1:checked ~ .navigation-and-text > .controls > label > .button1,
+#meme2:checked ~ .navigation-and-text > .controls > label > .button2,
+#meme3:checked ~ .navigation-and-text > .controls > label > .button3,
+#meme4:checked ~ .navigation-and-text > .controls > label > .button4,
+#meme5:checked ~ .navigation-and-text > .controls > label > .button5,
+#meme6:checked ~ .navigation-and-text > .controls > label > .button6 {
+    background-color: transparent;
+    border: 0.2rem solid #ffffff;
+}
+
+#meme1:checked ~ .navigation-and-text > .controls > .bar1:hover .button1,
+#meme2:checked ~ .navigation-and-text > .controls > .bar2:hover .button2,
+#meme3:checked ~ .navigation-and-text > .controls > .bar3:hover .button3,
+#meme4:checked ~ .navigation-and-text > .controls > .bar4:hover .button4,
+#meme5:checked ~ .navigation-and-text > .controls > .bar5:hover .button5,
+#meme6:checked ~ .navigation-and-text > .controls > .bar6:hover .button6 {
+    background-color: transparent;
+    border: 0.2rem solid #609ba3;
+}
+
+#meme1:checked ~ .slider {
+    transform: translate(0);
+}
+
+#meme1:checked ~ .navigation-and-text > .meme-description {
+    transform: translate(0);
+}
+
+#meme2:checked ~ .slider {
+    transform: translate(calc(((100% + 2vw)/6) * -1));
+}
+
+#meme2:checked ~ .navigation-and-text > .meme-description > .meme-text {
+    transform: translate(calc(100% * -1));
+}
+
+#meme3:checked ~ .slider {
+    transform: translate(calc(((100% + 2vw)/6) * -2));
+}
+
+#meme3:checked ~ .navigation-and-text > .meme-description > .meme-text {
+    transform: translate(calc(100% * -2));
+}
+
+#meme4:checked ~ .slider {
+    transform: translate(calc(((100% + 2vw)/6) * -3));
+}
+
+#meme4:checked ~ .navigation-and-text > .meme-description > .meme-text {
+    transform: translate(calc(100% * -3));
+}
+
+#meme5:checked ~ .slider {
+    transform: translate(calc(((100% + 2vw)/6) * -4));
+}
+
+#meme5:checked ~ .navigation-and-text > .meme-description > .meme-text {
+    transform: translate(calc(100% * -4));
+}
+
+#meme6:checked ~ .slider {
+    transform: translate(calc(((100% + 2vw)/6) * -5));
+}
+
+#meme6:checked ~ .navigation-and-text > .meme-description > .meme-text {
+    transform: translate(calc(100% * -5));
+}
